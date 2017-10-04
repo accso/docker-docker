@@ -1,2 +1,9 @@
 # docker-docker
-Einfacher Debian-Container der Docker und Docker-Compose vorinstalliert hat.
+Simple Docker containing with 
+
+* docker,
+* docker-compose, and
+* Python3 
+
+preinstalled.
+
