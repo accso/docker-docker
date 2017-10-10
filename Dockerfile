@@ -4,7 +4,7 @@ MAINTAINER marcus.rickert@accso.de
 ARG DOCKER_COMPOSE_VERSION=1.11.2
 
 RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -f -y  wget curl python3 python3.4-dev && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -f -y  wget curl python3 python3-dev python3-pip && \
     wget -nc -q https://download.docker.com/linux/debian/dists/stretch/pool/stable/amd64/docker-ce_17.03.2~ce-0~debian-stretch_amd64.deb -O /tmp/docker.deb && \
     dpkg -i /tmp/docker.deb || true && \
     DEBIAN_FRONTEND=noninteractive apt-get -f -y install && \
