@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:stretch-slim
 MAINTAINER marcus.rickert@accso.de
 
 ARG DOCKER_VERSION=17.12.1
@@ -6,6 +6,7 @@ ARG DOCKER_COMPOSE_VERSION=1.11.2
 
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -f -y  \
+                                   git \
     				   wget \
 				   curl \
 				   python3 \
